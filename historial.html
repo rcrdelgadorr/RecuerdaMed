@@ -1,0 +1,73 @@
+<!-- historial.html -->
+<!-- Archivo HTML estático sin dependencias externas, simulando app móvil RecordaMed -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecuerdaMed - Historial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="phone">
+        <header>
+            <h1>RecuerdaMed</h1>
+            <p class="subtitle">Recuerda Medicina</p>
+        </header>
+
+        <main>
+            <section>
+                <a href="index.html" class="btn btn-secondary">
+                    ← Volver al Inicio
+                </a>
+            </section>
+
+            <section>
+                <h2>Últimas 24 horas</h2>
+
+                <div class="history-item">
+                    <div class="history-info">
+                        <strong>Losartán 50mg</strong>
+                        <time>Hoy, 14:05</time>
+                    </div>
+                    <span class="status status-tomado">Tomado</span>
+                </div>
+
+                <div class="history-item">
+                    <div class="history-info">
+                        <strong>Paracetamol 500mg</strong>
+                        <time>Hoy, 08:00</time>
+                    </div>
+                    <span class="status status-tomado">Tomado</span>
+                </div>
+
+                <div class="history-item">
+                    <div class="history-info">
+                        <strong>Metformina 850mg</strong>
+                        <time>Ayer, 20:00</time>
+                    </div>
+                    <span class="status status-pendiente">Pendiente</span>
+                </div>
+
+                <div class="history-item">
+                    <div class="history-info">
+                        <strong>Losartán 50mg</strong>
+                        <time>Ayer, 14:00</time>
+                    </div>
+                    <span class="status status-tomado">Tomado</span>
+                </div>
+            </section>
+        </main>
+
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="historial.html" class="nav-link active">Historial</a>
+        </nav>
+    </div>
+
+</body>
+
+</html>

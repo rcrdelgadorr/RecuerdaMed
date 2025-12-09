@@ -1,0 +1,69 @@
+<!-- agregar.html -->
+<!-- Archivo HTML estático sin dependencias externas, simulando app móvil RecuerdaMed -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecuerdaMed - Agregar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="phone">
+        <header>
+            <h1>RecuerdaMed</h1>
+            <p class="subtitle">Recuerda Medicina</p>
+        </header>
+
+        <main>
+            <section>
+                <a href="index.html" class="btn btn-secondary">
+                    ← Volver al Inicio
+                </a>
+            </section>
+
+            <section>
+                <h2>Agregar Medicamento</h2>
+
+                <form action="index.html">
+                    <div class="form-group">
+                        <label for="nombre">Nombre del medicamento</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Ibuprofeno" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dosis">Dosis</label>
+                        <input type="text" id="dosis" name="dosis" placeholder="Ej: 500 mg" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hora">Hora de la toma</label>
+                        <input type="time" id="hora" name="hora" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="frecuencia">Frecuencia</label>
+                        <select id="frecuencia" name="frecuencia">
+                            <option value="8h">Cada 8 horas</option>
+                            <option value="12h">Cada 12 horas</option>
+                            <option value="diario" selected>Diario</option>
+                            <option value="semanal">Semanal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 30px;">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            Guardar
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
